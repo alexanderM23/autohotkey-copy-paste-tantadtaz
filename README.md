@@ -1,0 +1,1 @@
+# autohotkey-copy-paste-tantadtaz
