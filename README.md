@@ -65,7 +65,7 @@ as well as other operations.
 #### Note 2: My suggestion is - to remember such simple expression:
 #### Ta-n, Ta-di, Ta-z, Ta-La - that is for Copy, Paste, Cut, Select All.
 
-#### Ta-n - is for Tab + One (-n is for One);
+#### Ta-n - is for Tab + One (-n is for oNe);
 #### Ta-di - is for Tab + Two (-di is for Dobble or Duo, or De-)
 #### Ta-z - is for Tab + Top3 (-z is for Cutz / or Cuts)
 #### Ta-La - is for Tab + Top4  (-La is for aLL to select - it's like in a mirror, but it is more pleasantly for hearing.)
