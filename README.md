@@ -70,6 +70,5 @@ as well as other operations.
 #### Ta-z - is for Tab + Top3 (-z is for Cutz / or Cuts)
 #### Ta-La - is for Tab + Top4  (-La is for aLL to select - it's like in a mirror, but it is more pleasantly for hearing.)
 
-#### All others hotkeys is not necessary to memorize at all. I've put them here as an example only!
-#### This expression (this hotkeys) are working, if you copy text from one window to another, as well. Just remember - you do not need to release the TAB key each time, and press it again. Even if you are working with two windows (two text documents)!
+#### All others hotkeys is not necessary to memorize, at all. I've put them here as an example, only!
 #### Good Luck!
