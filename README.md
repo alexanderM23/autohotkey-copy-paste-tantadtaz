@@ -1,4 +1,4 @@
-# AutoHotkey Copy-Paste Script README.md
+# AutoHotkey Copy-Paste TanTadiTaz Script v.2.0 README.md
 
 ## 🌙 **Origin Story: From Spilled Juice to Space Technology**
 *How an accident led to a revolutionary discovery*
