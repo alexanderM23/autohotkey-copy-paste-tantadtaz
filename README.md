@@ -1,74 +1,99 @@
-autohotkey-copy-paste-tantadtaz
-An Autohotkey Tan-Tadi-Taz-TaLa Script by Aleksander Mamajevs
+# AutoHotkey Copy-Paste Script README.md
 
-This Autohotkey scritpt allows you to copy and paste a bit more easier and faster, 
-as well as other operations.
-The main hotkeys are:
+## 🌙 **Origin Story: From Spilled Juice to Space Technology**
+*How an accident led to a revolutionary discovery*
 
-Tab + Top1 - Copy;
-Tab + Top2 - Paste;
-Tab + Top3 - Cut;
-Tab + Top4 - Select All;
-Tab + Q - Shift + Backspace (Delete Edges);
-Tab + W - Delete;
-Tab + E - Select one letter to the Left;
-Tab + R - Select one letter to the Right;
-Tab + C - Select one word to the Left;
-Tab + V - Select one word to the Right;
-Tab + Z - Undo last operation (Ctrl - Z);
-Tab + X - Asterix mark, for select all files (Numpad*) in some programs;
-Tab + B - Numpad Minus (-), for Unselect all files  in some programs;
-Tab + A - Two Zeros;
-Tab + F - Send Dot (.);
-Tab + S - Enter;
-Tab + D - Enter;
+Sometimes great discoveries happen by accident. One day I spilled juice on my keyboard. After extensive cleaning, the bottom left keys — Ctrl, Alt, and Shift — remained sticky. While researching the problem, I learned: these exact keys are always the first to suffer from liquid damage. This mishap pushed me to write code that unexpectedly became a true breakthrough. Now I use it practically all the time.
 
-Shift + Tab - Shift + Tab;
-Alt + F4 - F11 (if you press Alt + F4 accidentally. Do not worry any more about any program would be closed by mistake.);
-F4 - F11 (if you press F4 accidentally. Do not worry any more about any program would be closed by mistake.);
+**Forget about bottom keys forever!** No more Ctrl, Alt, Shift — only the top row of your keyboard: Tab + numbers 1, 2, 3, 4. What's at the bottom — we ignore, what's at the top — we use to the fullest! Especially indispensable in darkness — evening, night, or when you simply can't see the keyboard. Your fingers will always find the large Tab key and the top row of numbers.
 
-CTRL + ALT + SHIFT + WIN + F12 - for Quick Script Exit;
-ScrollLock - for Quick Suspend Script Toggle;
+Think about it: an astronaut in zero gravity reaches only for the upper, easily accessible keys. Tab+1 — that's the top row, the most obvious place on the keyboard. During smoke conditions on a space station or any emergency situation with limited visibility, the hand intuitively finds the upper keys. Add oxygen deprivation when the brain works poorly? The simple mantra **"Ta-n, Ta-di, Ta-z, Ta-La"** — like a light song, will surface from memory and help copy and transmit critically important information.
 
-This Autohotkey scritpt allows you to copy and paste a way more easier and faster, as well as other operations.
-The main idea is:
-You just need to hold a Tab key, never release it, when you are copying anything. 
-It is working like this:
-If you just press Tab key as usually - the AHK program will send a 'Tab'  Keystroke for the System.
-If you press Tab key, and hold it pressed, then press 1 (Top1 key) for example. Then the AHK program will send a 'Ctrl + C'  Keystrokes for the System.
-Do not release Tab key, just continue pressing something. - If you press 2 (Top2 key) for example,  the AHK program will send a 'Ctrl + V'  Keystrokes for the System. Because the program was 'understand', that the Tab key, was in 'hold' position. So the AHK program should activate Ctrl key, and to add it to 'V Keystroke' automatically.
-And if you press S keyboard key, for example after that, the AHK program will send a Keystroke of 'Enter' key to the System, because it was preprogrammed into the  script before. Even when you are still holding Tab key pressed, the AHK program will make the correct decision - not work as Ctrl Keystroke any more, but do the 'Enter' key.
-In another words - you just holding one key of the keyboard, and the program is helping to you to press/to add - more additional  Keystrokes simultaneously. And it is doing it very quick.
-And because your fingers are like a bunch - always together, you would be probably less tired of your 'Copy-Paste' operations work, as well.
+---
 
-The 'live' example of how that is working:
-First, if you just press Tab, and hold it. 
-Then go to Window1. 
-Double click on your text's word by Left Mouse button - to select all word. 
-Press - 1 key (Top1 key. Continue holding the Tab key).
-Go to Window2.
-Click just once in that field by Left Mouse button, in place you need to put a word.
-Press - 2 key (Top2 key. Continue holding the Tab key).
-And you would see the word should appear in Window2.
-Press - S key (Continue holding the Tab key), to go to next Line in Window2.
-Then return to Window1, and select another word.
-- And the speed start to be x2 (x4) for your 'Copy-Paste' process, if you will be training a bit (or you'll get into this a little  bit). 
+## Structure by Groups:
 
-Note 1: Alt + Tab keystrokes do not work for switching the Windows (for fast jump from one window to another), if the 'TT copy-paste Lite' script is enabled. You need to suspend it manually, pressing 'End' keyboard key.
+### 🚀 **Quick Start**
+*Only top row — only simplicity*
 
-I have set the 'End' key - for Suspend toggle.
-And you can open the script in any program, like Notepad, and change it for yourself.
+Imagine: you work only with the upper keys of the keyboard! Hold Tab and press numbers — everything happens in one zone, under one hand. **The bottom keys Ctrl, Alt, Shift are no longer needed** — forget about them forever. Perfect for working in darkness when the hand intuitively finds the top row.
 
-It should  work perfectly for both - for text, and for files, too.
-Thank you, very much!
+**Remember the mantra (top row only!):** Ta-n, Ta-di, Ta-z, Ta-La
+- **Ta-n** (Tab+1) — Copy (oNe)
+- **Ta-di** (Tab+2) — Paste (Duo/Double)
+- **Ta-z** (Tab+3) — Cut (cutZ)
+- **Ta-La** (Tab+4) — Select All (aLL)
 
-Note 2: My suggestion is - to remember such simple expression:
-Ta-n, Ta-di, Ta-z, Ta-La - that is for Copy, Paste, Cut, Select All.
+### ⚙️ **Core Operations**
+*Everything in the upper part of the keyboard*
 
-Ta-n - is for Tab + One (-n is for oNe);
-Ta-di - is for Tab + Two (-di is for Dobble or Duo, or De-)
-Ta-z - is for Tab + Top3 (-z is for Cutz / or Cuts)
-Ta-La - is for Tab + Top4  (-La is for aLL to select - it's like in a mirror, but it is more pleasantly for hearing.)
+Revolutionary approach: **we use only upper keys**, which are always at hand. Tab becomes a universal modifier, and all commands are the top row of letters and numbers. The system automatically understands context. Especially convenient in the evening when eyes are tired — the hand naturally finds upper keys.
 
-All others hotkeys is not necessary to memorize, at all. I've put them here as an example, only!
-Good Luck!
+**Text Editing (top row of letters):**
+- `Tab + Q` — Delete Edges (Shift + Backspace)
+- `Tab + W` — Delete
+- `Tab + Z` — Undo
+- `Tab + S/D` — Enter
+
+**Navigation and Selection (middle row — also easy to find):**
+- `Tab + E` — Select one letter to the Left
+- `Tab + R` — Select one letter to the Right
+- `Tab + C` — Select one word to the Left
+- `Tab + V` — Select one word to the Right
+
+### 🎯 **Special Features**
+*Additional capabilities — all up there*
+
+The script includes protection from accidental keypresses and special commands for file operations. **Same principle: we work only with the upper part of the keyboard**, forgetting about the existence of bottom modifiers.
+
+**File Operations:**
+- `Tab + X` — Select all files (Numpad*)
+- `Tab + B` — Deselect all (Numpad-)
+- `Tab + A` — Insert "00"
+- `Tab + F` — Insert dot (.)
+
+**Protection and Control:**
+- `Alt + F4` → F11 (close protection)
+- `ScrollLock` — Suspend Script Toggle
+- `Ctrl+Alt+Shift+Win+F12` — Emergency Exit (the only exception)
+
+### 💡 **How It Works**
+*Philosophy of the top row*
+
+The script uses a revolutionary approach: **all work happens in the upper part of the keyboard**. Tab becomes the only modifier you need. Quick press — regular Tab, hold down — command activator with upper keys.
+
+**Example workflow (top only!):**
+1. Hold Tab (large key on the left)
+2. In Window1: double-click on word → press "1" (top row)
+3. Switch to Window2: click where needed → press "2" (top row)
+4. Press "S" for new line (middle row, but still easy)
+5. Repeat — speed x2-x4!
+
+### 🌌 **Universal Application**
+*From home computer to space station*
+
+This script was born from the necessity to work without bottom keys and turned into a universal solution. **The top row is the universal comfort zone:**
+- **For elderly people** — no need to search for small keys at the bottom
+- **For night work** — hand intuitively finds the top row
+- **For emergencies** — the most accessible keys are always at the top
+- **For space missions** — easier to reach the top of the keyboard in zero gravity
+
+### ⚠️ **Important Notes**
+*What you need to know before using*
+
+- **Alt+Tab temporarily unavailable** when script is active (use ScrollLock to suspend)
+- Script can be edited in any text editor to suit your needs
+- Works equally effectively with text and files
+- **Main advantage:** complete abandonment of bottom modifier keys
+
+---
+
+## 🎭 **Conclusion**
+
+What started as a solution to a spilled keyboard problem turned into an elegant tool using only the upper part of the keyboard. **Bottom keys are dead — long live the top row!** When it's dark, when eyes are tired, when maximum speed is needed, or when every movement counts — your hand automatically finds Tab and the numbers at the top.
+
+The simple song **"Ta-n, Ta-di, Ta-z, Ta-La"** — it's all top row, always at hand. Whether you're a student in a dorm working at night, an elderly person with poor vision, or an astronaut in an emergency — the upper keys will never fail. Because genius is always simple and always at the top!
+
+---
+
+*AutoHotkey script by Aleksandrs M. Orrin (aka r.n. Aleksander Mamajevs) — freeing the keyboard from the tyranny of bottom keys.*
