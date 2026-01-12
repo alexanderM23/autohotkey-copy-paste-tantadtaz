@@ -1,99 +1,77 @@
-# AutoHotkey Copy-Paste TanTadiTaz Script v.2.0 README.md
+# TanTadiTaz: Tab-based AHK Workflow v.2.0
 
-## 🌙 **Origin Story: From Spilled Juice to Space Technology**
-*How an accident led to a revolutionary discovery*
+> **TL;DR:** An AutoHotkey script that turns your `Tab` key into a functional modifier layer. It moves Copy/Paste and navigation to the top row, eliminating the need to reach for `Ctrl`, `Alt`, or `Shift` at the bottom of the keyboard.
 
-Sometimes great discoveries happen by accident. One day I spilled juice on my keyboard. After extensive cleaning, the bottom left keys — Ctrl, Alt, and Shift — remained sticky. While researching the problem, I learned: these exact keys are always the first to suffer from liquid damage. This mishap pushed me to write code that unexpectedly became a true breakthrough. Now I use it practically all the time.
+## ⚡ The "Why" (Context)
+This actually started as a hardware fix: I spilled juice on my keyboard and killed the bottom row (`Ctrl`, `Shift`). Instead of buying a new device immediately, I wrote code to remap the logic.
 
-**Forget about bottom keys forever!** No more Ctrl, Alt, Shift — only the top row of your keyboard: Tab + numbers 1, 2, 3, 4. What's at the bottom — we ignore, what's at the top — we use to the fullest! Especially indispensable in darkness — evening, night, or when you simply can't see the keyboard. Your fingers will always find the large Tab key and the top row of numbers.
+It turned out that **using the top row (`Tab` + Numbers) is significantly more ergonomic** than standard chords:
+*   **Less wrist movement:** Your hand stays in the natural `WASD` / `QWERTY` position.
+*   **Blind typing:** `Tab` and numbers 1-4 are tactile and easier to find in the dark than hunting for `Ctrl`.
+*   **Speed:** I found I save time on shortcuts because my fingers don't have to "dive" to the bottom of the board.
 
-Think about it: an astronaut in zero gravity reaches only for the upper, easily accessible keys. Tab+1 — that's the top row, the most obvious place on the keyboard. During smoke conditions on a space station or any emergency situation with limited visibility, the hand intuitively finds the upper keys. Add oxygen deprivation when the brain works poorly? The simple mantra **"Ta-n, Ta-di, Ta-z, Ta-La"** — like a light song, will surface from memory and help copy and transmit critically important information.
-
----
-
-## Structure by Groups:
-
-### 🚀 **Quick Start**
-*Only top row — only simplicity*
-
-Imagine: you work only with the upper keys of the keyboard! Hold Tab and press numbers — everything happens in one zone, under one hand. **The bottom keys Ctrl, Alt, Shift are no longer needed** — forget about them forever. Perfect for working in darkness when the hand intuitively finds the top row.
-
-**Remember the mantra (top row only!):** Ta-n, Ta-di, Ta-z, Ta-La
-- **Ta-n** (Tab+1) — Copy (oNe)
-- **Ta-di** (Tab+2) — Paste (Duo/Double)
-- **Ta-z** (Tab+3) — Cut (cutZ)
-- **Ta-La** (Tab+4) — Select All (aLL)
-
-### ⚙️ **Core Operations**
-*Everything in the upper part of the keyboard*
-
-Revolutionary approach: **we use only upper keys**, which are always at hand. Tab becomes a universal modifier, and all commands are the top row of letters and numbers. The system automatically understands context. Especially convenient in the evening when eyes are tired — the hand naturally finds upper keys.
-
-**Text Editing (top row of letters):**
-- `Tab + Q` — Delete Edges (Shift + Backspace)
-- `Tab + W` — Delete
-- `Tab + Z` — Undo
-- `Tab + S/D` — Enter
-
-**Navigation and Selection (middle row — also easy to find):**
-- `Tab + E` — Select one letter to the Left
-- `Tab + R` — Select one letter to the Right
-- `Tab + C` — Select one word to the Left
-- `Tab + V` — Select one word to the Right
-
-### 🎯 **Special Features**
-*Additional capabilities — all up there*
-
-The script includes protection from accidental keypresses and special commands for file operations. **Same principle: we work only with the upper part of the keyboard**, forgetting about the existence of bottom modifiers.
-
-**File Operations:**
-- `Tab + X` — Select all files (Numpad*)
-- `Tab + B` — Deselect all (Numpad-)
-- `Tab + A` — Insert "00"
-- `Tab + F` — Insert dot (.)
-
-**Protection and Control:**
-- `Alt + F4` → F11 (close protection)
-- `ScrollLock` — Suspend Script Toggle
-- `Ctrl+Alt+Shift+Win+F12` — Emergency Exit (the only exception)
-
-### 💡 **How It Works**
-*Philosophy of the top row*
-
-The script uses a revolutionary approach: **all work happens in the upper part of the keyboard**. Tab becomes the only modifier you need. Quick press — regular Tab, hold down — command activator with upper keys.
-
-**Example workflow (top only!):**
-1. Hold Tab (large key on the left)
-2. In Window1: double-click on word → press "1" (top row)
-3. Switch to Window2: click where needed → press "2" (top row)
-4. Press "S" for new line (middle row, but still easy)
-5. Repeat — speed x2-x4!
-
-### 🌌 **Universal Application**
-*From home computer to space station*
-
-This script was born from the necessity to work without bottom keys and turned into a universal solution. **The top row is the universal comfort zone:**
-- **For elderly people** — no need to search for small keys at the bottom
-- **For night work** — hand intuitively finds the top row
-- **For emergencies** — the most accessible keys are always at the top
-- **For space missions** — easier to reach the top of the keyboard in zero gravity
-
-### ⚠️ **Important Notes**
-*What you need to know before using*
-
-- **Alt+Tab temporarily unavailable** when script is active (use ScrollLock to suspend)
-- Script can be edited in any text editor to suit your needs
-- Works equally effectively with text and files
-- **Main advantage:** complete abandonment of bottom modifier keys
+I’ve been using this daily for a while now. It takes about ~2 days to build muscle memory, but going back to standard `Ctrl+C` feels slow afterwards.
 
 ---
 
-## 🎭 **Conclusion**
+## ⌨️ Key Mappings
 
-What started as a solution to a spilled keyboard problem turned into an elegant tool using only the upper part of the keyboard. **Bottom keys are dead — long live the top row!** When it's dark, when eyes are tired, when maximum speed is needed, or when every movement counts — your hand automatically finds Tab and the numbers at the top.
+**Logic:** Hold `Tab` to activate the command layer. Release `Tab` quickly to use it as a normal Tab key (handled via AHK `KeyWait`).
 
-The simple song **"Ta-n, Ta-di, Ta-z, Ta-La"** — it's all top row, always at hand. Whether you're a student in a dorm working at night, an elderly person with poor vision, or an astronaut in an emergency — the upper keys will never fail. Because genius is always simple and always at the top!
+### 1. Clipboard Operations (Top Row Numbers)
+Mnemonic aid (Ta-n, Ta-di, Ta-z):
+
+| Shortcut | Action | Mnemonic |
+| :--- | :--- | :--- |
+| `Tab` + `1` | **Copy** (`Ctrl+C`) | Ta-**n** (One) |
+| `Tab` + `2` | **Paste** (`Ctrl+V`) | Ta-**di** (Double) |
+| `Tab` + `3` | **Cut** (`Ctrl+X`) | Ta-**z** (CutZ) |
+| `Tab` + `4` | **Select All** (`Ctrl+A`) | Ta-**La** (All) |
+
+### 2. Editing & Navigation (QWERTY Row)
+Allows for text editing using only the left hand.
+
+*   **Edit:**
+    *   `Tab` + `Q` → Delete edges / word (Context dependent)
+    *   `Tab` + `W` → `Delete`
+    *   `Tab` + `Z` → **Undo** (`Ctrl+Z`)
+    *   `Tab` + `S` / `D` → `Enter` (Useful for form filling)
+
+*   **Selection (Text jumping):**
+    *   `Tab` + `E` / `R` → Select by **Letter** (Left / Right)
+    *   `Tab` + `C` / `V` → Select by **Word** (Left / Right)
+
+### 3. File Explorer Extras
+Active when focus is on Windows Explorer or file lists.
+*   `Tab` + `X` → Select all files
+*   `Tab` + `B` → Deselect all
+*   `Tab` + `A` / `F` → Quick insert "00" or dot (.) for renaming.
 
 ---
 
-*AutoHotkey script by Aleksandrs M. Orrin (aka r.n. Aleksander Mamajevs) — freeing the keyboard from the tyranny of bottom keys.*
+## 🛠 Installation & Usage
+
+1. Install [AutoHotkey](https://www.autohotkey.com/) (Check code for v1.1 or v2.0 compatibility).
+2. Download `TanTadiTaz_v2.ahk` from this repository.
+3. Double-click the script to run.
+
+### System Controls
+Since `Tab` is hijacked, standard `Alt+Tab` behavior might be affected.
+*   **ScrollLock**: Toggles the script (Suspend). Use this if you need a "clean" Tab key for gaming or other apps.
+*   **Alt + F4**: Remapped to `F11` (Safety feature to prevent accidental closing).
+*   **Emergency Exit**: `Ctrl+Alt+Shift+Win+F12` (Kills the script immediately).
+
+---
+
+## ⚠️ Known Issues / Trade-offs
+
+Just being honest about the friction points:
+1.  **Alt-Tab:** Switching windows might feel different or require suspending the script depending on your OS settings.
+2.  **Input Lag:** Because AHK intercepts `Tab`, there is a tiny delay when sending a "real" Tab keystroke (it waits to see if you are pressing a secondary key).
+3.  **IDE Conflict:** Can conflict with code editors that use `Tab` heavily for autocomplete (IntelliSense). I recommend adding `IfWinNotActive` exceptions for your specific IDE.
+
+## License
+MIT. Feel free to fork and adapt to your workflow.
+
+---
+*Created by Aleksandrs M. Orrin. Code is ugly, but it works.*
